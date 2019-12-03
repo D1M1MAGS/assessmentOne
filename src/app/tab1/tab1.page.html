@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Set a Goal / Task
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form id = "todoListForm" >
+    <ion-list>
+    <ion-list-header> Add a Goal or Task to the list </ion-list-header>
+      <ion-item>
+        <ion-input name = "taskName" placeholder = "Enter a task" type = "text" ></ion-input>
+      </ion-item>
+
+      <ion-button expand = "full" margin = "10dp" (click)="start"> Add to List</ion-button>
+      <!--<ion-button expand = "full" margin = "10dp" *ngIf="!started" (click)="start" [disabled]="!taskForm.valid"> Add </ion-button>-->
+
+    </ion-list>
+
+  </form>
+</ion-content>
+
+<!-- [formGroup] = "taskForm" -->
+<!-- formControlName = "name" -->
+<!-- add later-->
